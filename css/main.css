@@ -1,0 +1,409 @@
+:root {
+    --primary-color:    #60269E;
+    --secondary-color:  #03CFFC;
+
+    --background-color:     #F6EEFF;
+    --title-color:          #15141a;
+    --gray-color:           #909090;
+    --link-color:           #404040;
+    --p-color:              #666262; 
+
+    --base-font-family:     'Poppins', sans-serif;
+
+    --h1-font-size:         42px;
+    --h2-font-size:         32px;
+    --h3-font-size:         24px;
+    --p-font-size:          16px;
+
+}
+
+body {
+    font-family: var(--base-font-family);
+    height: 1000px;
+    background-color: var(--background-color);
+}
+
+/* --------------------------------------
+    Navbar
+----------------------------------------*/
+.navbar .logo {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.navbar .business {
+    margin-left: 50px;
+    color: var(--gray-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 100px;
+    transition: 0.1s ease-in;
+} 
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-secondary {
+    padding: 12px 32px;
+    border: 2px var(--secondary-color) solid;
+    border-radius: 100px;
+    background-color: var(--background-color);
+    color: #000;
+    transition: 0.1s ease-in;
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+}
+/* --------------------------------------
+    Hero
+----------------------------------------*/
+.bg-hero {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#home h1 {
+    font-weight: bold;
+}
+
+#home .menonjol {
+    color: var(--secondary-color);
+}
+
+/* --------------------------------------
+    Card
+----------------------------------------*/
+
+/* .card img {
+    padding-top: 30px;
+}
+
+.card {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    transition: 0.2s ease-in;
+    margin-top: 80px;
+}
+
+.card:hover {
+    bottom: 5px;
+}
+
+.card .card-body h4, .card-text {
+    text-align: center;
+}
+
+.card-body h4 {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-body .card-text {
+    font-size: 15px;
+    color: var(--p-color);
+} */
+
+.column {
+    float: left;
+    width: 15%;
+    padding: 0 15px;
+    margin-top: 60px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    height: 340px;
+}
+
+.card:hover{
+    top: 5px;
+}
+
+.card-categories h5 {
+    color: var(--primary-color);
+}
+
+.card-categories p {
+    color: var(--p-color);
+}
+
+/* --------------------------------------
+    Mockup section
+----------------------------------------*/
+.mockup {
+    margin-top: 30px;
+}
+
+.mockup h1 {
+    font-weight: bold;
+}
+
+.mockup p {
+    color: var(--p-color);
+}
+
+/* --------------------------------------
+    App section
+----------------------------------------*/
+.app-section .bg-hero2 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+}
+
+.app-section h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 30px;
+}
+
+.app-section p {
+    color: #fff;
+    
+}
+
+/* --------------------------------------
+    For business
+----------------------------------------*/
+.info {
+    margin-top: 50px;
+}
+
+.info h1 {
+    font-weight: bold;
+}
+
+.info h5 {
+    color: var(--link-color);
+}
+
+.info span {
+    color: var(--secondary-color);
+}
+
+.info p {
+    color: var(--p-color);
+}
+
+/* --------------------------------------
+    Form Email
+----------------------------------------*/
+.form-email {
+    padding-top: 30px;
+}
+
+.form-email .form-input {
+    width: 715px;
+    height: 65px;
+    align-items: center;
+    border: 3px solid var(--gray-color);
+    border-radius: 10px;
+}
+
+.form-email .form-input:hover {
+    border: 3px solid var(--primary-color);
+}
+
+.form-email p {
+    font-size: var(--p-font-size);
+    color: var(--p-color);
+}
+
+.form-email h1 {
+    color: var(--primary-color);
+}
+
+/* --------------------------------------
+    Footer
+----------------------------------------*/
+.footer {
+    background-color: #DCC4F6;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 20px;
+}
+
+.footer-col h3 {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--p-color);
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    padding-left: 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col h4 {
+    margin-left: 27px;
+}
+
+/* --------------------------------------
+    Login Page
+----------------------------------------*/
+.login {
+    height: 100vh;
+}
+
+.header h1 {
+    margin-bottom: 22px;
+}
+
+.login-form label {
+    margin-top: 20px;
+}
+
+.login-form input{
+    /* position: absolute;
+    width: 312px;
+    height: 42px;
+    left: 186px;
+    top: 259px; */
+    background-color: #fff;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.login-form a {
+    font-size: normal;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 20px;
+    display: block;
+}
+
+.login-form .sign-up {
+    width: 100%;
+    background: var(--primary-color);
+    border-radius: 100px;
+    border: none;
+    height: 42px;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+.login-form span {
+    font-size: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.login-form span a {
+    font-weight: 700;
+}
+
+.login-right img {
+    position: fixed;
+}
+
+/*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+@media only screen and (max-width: 768px) {
+    .col {
+        flex-basis: 100%;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .row {
+        text-align: center;
+        align-items: center;
+    }
+    /* Hero Section */
+    .home img {
+        width: 50%;
+    }
+
+    /* Card */
+
+    /* Footer */
+    .footer-col {
+        width: 53%;
+    }
+
+    .footer-col img {
+        width: 10rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .col {
+        flex-basis: 100%;
+    }
+
+    .row {
+        text-align: center;
+        align-items: center;
+    }
+
+    .card-sec {
+        width: 30px;
+    }
+}
